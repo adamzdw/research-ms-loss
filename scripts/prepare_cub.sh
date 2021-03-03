@@ -8,8 +8,8 @@ CUB_DATA='http://www.vision.caltech.edu.s3-us-west-2.amazonaws.com/visipedia-dat
 if [[ ! -d "${CUB_ROOT}" ]]; then
     mkdir -p resource/datasets
     pushd resource/datasets
-    echo "Downloading CUB_200_2011 data-set..."
-    wget ${CUB_DATA}
+    # echo "Downloading CUB_200_2011 data-set..."
+    # wget ${CUB_DATA}
     tar -zxf CUB_200_2011.tgz
     popd
 fi
