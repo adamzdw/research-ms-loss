@@ -9,7 +9,11 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "subProcess": true,
+            "stopOnEntry": false,
+            "args": ["--cfg", "configs/example.yaml"],
+            "env": {"CUDA_VISIBLE_DEVICES": "0,1,2,3"}
         }
     ]
 }
